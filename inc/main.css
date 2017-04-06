@@ -1,0 +1,206 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline}article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block}blockquote, q {quotes: none}blockquote:before, blockquote:after,q:before, q:after {content: "";content: none}ins {background-color: #ff9;color: #000;text-decoration: none}mark {background-color: #ff9;color: #000;font-style: italic;font-weight: bold}del {text-decoration: line-through}abbr[title], dfn[title] {border-bottom: 1px dotted;cursor: help}table {border-collapse: collapse;border-spacing: 0}hr {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0}input, select {vertical-align: middle}body {font: 13px/1.231 sans-serif;*font-size: small}select, input, textarea, button {font: 99% sans-serif}pre, code, kbd, samp {font-family: monospace, sans-serif}html {overflow-y: scroll}a, a:hover, a:active {outline: none}ul, ol {margin-left: 2em}ol {list-style-type: decimal}nav ul, nav li {margin: 0;list-style: none;list-style-image: none}small {font-size: 85%}strong, th {font-weight: bold}td {vertical-align: top}sub, sup {font-size: 75%;line-height: 0;position: relative}sup {top: -0.5em}sub {bottom: -0.25em}pre {white-space: pre;white-space: pre-wrap;word-wrap: break-word;padding: 15px}textarea {overflow: auto}.ie6 legend, .ie7 legend {margin-left: -7px}input[type="radio"] {vertical-align: text-bottom}input[type="checkbox"] {vertical-align: bottom}.ie7 input[type="checkbox"] {vertical-align: baseline}.ie6 input {vertical-align: text-bottom}label, input[type="button"], input[type="submit"], input[type="image"], button {cursor: pointer}button, input, select, textarea {margin: 0}input:invalid, textarea:invalid {border-radius: 1px;-moz-box-shadow: 0px 0px 5px red;-webkit-box-shadow: 0px 0px 5px red;box-shadow: 0px 0px 5px red}.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {background-color: #f0dddd}::-moz-selection {background: #FF5E99;color: #fff;text-shadow: none}::selection {background: #FF5E99;color: #fff;text-shadow: none}a:link {-webkit-tap-highlight-color: #FF5E99}button {width: auto;overflow: visible} .ie7 img {-ms-interpolation-mode: bicubic} body, select, input, textarea { color: #444; }h1, h2, h3, h4, h5, h6 {font-weight: bold}.ir {display: block;text-indent: -999em;overflow: hidden;background-repeat: no-repeat;text-align: left;direction: ltr}.hidden {display: none;visibility: hidden}.visuallyhidden {border: 0;clip: rect(0 0 0 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px} .visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {clip: auto;height: auto;margin: 0;overflow: visible;position: static;width: auto} .invisible {visibility: hidden} .clearfix:before, .clearfix:after {content: "\0020";display: block;height: 0;overflow: hidden}.clearfix:after {clear: both} .clearfix {zoom: 1}
+.fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp {  padding: 0;margin: 0;border: 0;outline: none;vertical-align: top}
+.fancybox-wrap {position: absolute;top: 0;left: 0;z-index: 8020}
+.fancybox-skin {position: relative;background: #f9f9f9;color: #444;text-shadow: none;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px}
+.fancybox-opened {z-index: 8030}
+.fancybox-opened .fancybox-skin {-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5)}
+.fancybox-outer, .fancybox-inner {position: relative}
+.fancybox-inner {overflow: hidden}
+.fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling: touch}
+.fancybox-error {color: #444;font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;margin: 0;padding: 15px;white-space: nowrap}
+.fancybox-image, .fancybox-iframe {display: block;width: 100%;height: 100%}
+.fancybox-image {max-width: 100%;max-height: 100%}
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {background-image: url("images/fancybox_sprite.png")}
+#fancybox-loading {position: fixed;top: 50%;left: 50%;margin-top: -22px;margin-left: -22px;background-position: 0 -108px;opacity: 0.8;cursor: pointer;z-index: 8060}
+#fancybox-loading div {width: 44px;height: 44px;background: url("images/fancybox_loading.gif") center center no-repeat}
+.fancybox-close {position: absolute;top: -18px;right: -18px;width: 36px;height: 36px;cursor: pointer;z-index: 8040}
+.fancybox-nav {position: absolute;top: 0;width: 40%;height: 100%;cursor: pointer;text-decoration: none;background: transparent url("images/blank.gif");/* helps IE */-webkit-tap-highlight-color: rgba(0, 0, 0, 0);z-index: 8040}
+.fancybox-prev {left: 0}
+.fancybox-next {right: 0}
+.fancybox-nav span {position: absolute;top: 50%;width: 36px;height: 34px;margin-top: -18px;cursor: pointer;z-index: 8040;visibility: hidden}
+.fancybox-prev span {left: 10px;background-position: 0 -36px}
+.fancybox-next span {right: 10px;background-position: 0 -72px}
+.fancybox-nav:hover span {visibility: visible}
+.fancybox-tmp {position: absolute;top: -99999px;left: -99999px;visibility: hidden;max-width: 99999px;max-height: 99999px;overflow: visible !important}
+.fancybox-lock {overflow: hidden}
+.fancybox-overlay {position: absolute;top: 0;left: 0;overflow: hidden;display: none;z-index: 8010;background: url("images/fancybox_overlay.png")}
+.fancybox-overlay-fixed {position: fixed;bottom: 0;right: 0}
+.fancybox-lock .fancybox-overlay {overflow: auto;overflow-y: scroll}
+.fancybox-title {visibility: hidden;font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;position: relative;text-shadow: none;z-index: 8050}
+.fancybox-opened .fancybox-title {visibility: visible}
+.fancybox-title-float-wrap {position: absolute;bottom: 0;right: 50%;margin-bottom: -35px;z-index: 8050;text-align: center}
+.fancybox-title-float-wrap .child {display: inline-block;margin-right: -100%;padding: 2px 20px;background: transparent;/* Fallback for web browsers that doesn't support RGBa */background: rgba(0, 0, 0, 0.8);-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;text-shadow: 0 1px 2px #222;color: #FFF;font-weight: bold;line-height: 24px;white-space: nowrap}
+.fancybox-title-outside-wrap {position: relative;margin-top: 10px;color: #fff}
+.fancybox-title-inside-wrap {padding-top: 10px}
+.fancybox-title-over-wrap {position: absolute;bottom: 0;left: 0;color: #fff;padding: 10px;background: #000;background: rgba(0, 0, 0, 0.8)}
+.fancybox-title a {color: #f63440;text-decoration: none}
+.fancybox-title a:hover {text-decoration: underline}
+.rotating {display: inline-block;-webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-ms-transform-style: preserve-3d;-o-transform-style: preserve-3d;transform-style: preserve-3d;-webkit-transform: rotateX(0) rotateY(0) rotateZ(0);-moz-transform: rotateX(0) rotateY(0) rotateZ(0);-ms-transform: rotateX(0) rotateY(0) rotateZ(0);-o-transform: rotateX(0) rotateY(0) rotateZ(0);transform: rotateX(0) rotateY(0) rotateZ(0);-webkit-transition: 0.5s;-moz-transition: 0.5s;-ms-transition: 0.5s;-o-transition: 0.5s;transition: 0.5s;-webkit-transform-origin-x: 50%;}
+.rotating.flip {position: relative;}
+.rotating .front, .rotating .back {left: 0;top: 0;-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;-ms-backface-visibility: hidden;-o-backface-visibility: hidden;backface-visibility: hidden;}
+.rotating .front {position: absolute;display: inline-block;-webkit-transform: translate3d(0,0,1px);-moz-transform: translate3d(0,0,1px);-ms-transform: translate3d(0,0,1px);-o-transform: translate3d(0,0,1px);transform: translate3d(0,0,1px);}
+.rotating.flip .front {z-index: 1;}
+.rotating .back {display: block;opacity: 0;}
+body {font-family: 'proxima-nova-soft', Helvetica, Arial, sans-serif;font-size: 12px;font-weight: 300;background: #f63440;overflow: hidden}
+.loader {position: fixed;top: 0px;left: 0px;background: url(images/loader.gif) no-repeat 50% 50% #f63440;width: 100%;height: 100%;z-index: 5000}
+
+header {position: fixed;top: -107px;left: 0px;width: 100%;background: black;height: 56px;z-index: 1000}
+header ul {list-style: none;padding: 0px;margin: 10px auto;width: 1100px;display: table;height: 35px}
+header ul li {display: table-cell;height: 35px;line-height: 87px;text-align: center;white-space: nowrap}
+header ul li a {display: block;margin: 0px auto;text-decoration: none;color: #f63440;text-transform: uppercase;height: 14px;line-height: 14px;font-family: 'museo-slab', Georgia, serif;font-size: 1.5em;padding: 10px 20px;border: 1px solid black;border-left: none;border-right: none}
+header ul li a:hover, header ul li a.on {color: white}
+header ul li a.on {border-color: white}
+
+footer {position: fixed;bottom: -33px;left: 50%;margin-left: -500px;width: 1000px;height: 33px;z-index: 1001}
+footer div.contact-float {float: left; box-shadow: 0 0 5px black;margin-left: -80px;padding: 8px 18px 8px 36px;font-family: 'museo-slab', Georgia, serif;font-size: 1.2em;color: white;cursor: pointer;background: rgba(0,0,0,0.3)}
+footer div.contact-float em {font-style: italic;color: #f63440;text-decoration: none}
+footer div.contact-float:hover {background-color: black;box-shadow: 0 0 15px black}
+
+ul.social {list-style: none;padding: 0px;margin: 0px;height: 33px;position: absolute;right: 0px}
+ul.social li {margin: 0px;padding: 0px;float: left}
+ul.social li a {display: block;margin: 0 10px 0 0;text-decoration: none;color: #000;text-transform: uppercase;height: 30px;width: 30px;line-height: 30px;font-size: 12px;overflow: hidden;text-indent: -1000px}
+ul.social li a.twt {background: url('images/twitter.png') transparent;background-size: 30px 30px}
+ul.social li a.fb {background: url('images/fb.png') transparent;background-size: 30px 30px}
+ul.social li a.gp {background: url('images/plus.png') transparent;background-size: 30px 30px}
+ul.social li a.sk {background: url('images/skype.png') transparent;background-size: 30px 30px}
+/*ul.social li a.lin {background: url('images/linkedin.png') transparent;background-size: 30px 30px}
+ul.social li a.wp {background: url('images/wp.png') transparent;background-size: 30px 30px}
+ul.social li a.frlncr {background: url('images/frlncr.png') transparent;background-size: 30px 30px}*/
+
+h1 {letter-spacing: 0.05em}
+a.offset {position: absolute;left: 0px;top: -57px}
+#main {height: 4661px}
+.touch body {overflow: hidden}
+.touch #wrapper {position: absolute;top: 0;left: 0;bottom: 0;width: 100%;z-index: 5}
+.touch .bg {min-height: 150%}
+a.next, a.prev {display: block;float: left;margin: 3em 0;background: url(images/arrow.png) no-repeat 100% 50%;padding-right: 30px;line-height: 20px;color: black}
+.asd{position:absolute}
+.huts{position:absolute}
+.hut1{ bottom: 0px;width: 100%;height: 70px;background: url(images/bgd.png) bottom center}
+.huts.hut2{  top: 0px;width: 100%;height: 118px;background: url(images/bgd2.png) right;margin-top: -30px}
+.huts.hut3{  top: 30px;width: 100%;height: 200px;background: url(images/bgd3.png);margin-top: -60px} 
+
+#main section {height: 760px;padding: 0;margin: 0;width: 100%;max-width: 1920px;position: relative;margin: 0 auto;z-index: 5}
+#main section article {width: 1000px;margin: 0 0 0 -500px;left: 50%;top: 0px;position: absolute;text-align: center}
+#main section#first,#main section#second {background: rgba(0, 0, 0, 0.01);box-shadow: none}
+#main section.about {background:url('images/dark_wood.png') #414141; overflow:hidden}
+#main section.services {background: url('images/starfield-background.png') 100% 100% repeat;overflow:hidden}
+#main section.pfol {background: #a68f58}
+#main section.contact {background: url(images/bg2.png) top center no-repeat #3e3e3e;background-size: 100% auto}
+#main section.mountains{background:#a68f58; height:100px}
+.hidn{text-indent:-9999px;height:0px}
+#main section.about .love {position: absolute;top: 95px;right: -40px;width: 700px;min-height: 100px;background: black;background: rgba(0, 0, 0, 0.8);padding-bottom: 40px}
+#main section.about .love h1 {text-align: left;margin: 47px 95px 10px 84px;padding: 0;font-size: 46px;font-weight: normal;font-family: 'museo-slab', Georgia, serif;width: auto;height: auto;color: white}
+#main section.about .love h1 i {color: #ef4135;font-style: italic}
+#main section.about .love p {text-align: left;clear: left;margin: 0 94px 1em 84px;line-height: 1.7em;font-size: 1.33em;  color: white}
+#main section.about .love p.callout {text-align: left;clear: left;margin: 0 94px 1em 84px;line-height: 1.7em;font-size: 1.7em;font-family: 'museo-slab', Georgia, serif;font-weight: normal;font-style: italic;color: #f63440;border: 1px solid white;border-left: none;border-right: none;padding: 10px 0px;letter-spacing: 1px}
+
+#main section.contact .love {position: absolute;top: 200px; right:0px;width: 424px;min-height: 100px;background: black;background: rgba(0, 0, 0, 0.8); }
+#main section.contact .love h1 {text-align: left;margin: 47px 95px 10px 84px;padding: 0;font-size: 46px;font-weight: normal;font-family: 'museo-slab', Georgia, serif;width: auto;height: auto;color: white}
+#main section.contact .love h1 i {color: #ef4135;font-style: italic}
+#main section.contact .love p {text-align: left;clear: left;margin: 0 94px 1em 84px;line-height: 1.7em;font-size: 1.33em;  color: white}
+#main section.contact .love p.callout {text-align: left;clear: left;margin: 0 94px 1em 84px;line-height: 1.7em;font-size: 1.7em;font-family: 'museo-slab', Georgia, serif;font-weight: normal;font-style: italic;color: #f63440;border: 1px solid white;border-left: none;border-right: none;padding: 10px 0px;letter-spacing: 1px}
+#main section.contact .vasu_con {position: absolute;top: 200px;left: -84px;width: 405px;min-height: 300px;background: black;background: rgba(0, 0, 0, 0.8);padding-bottom: 42px}
+#main section.contact .vasu_con h1 {float: left;margin: 47px 0px 20px 64px;padding: 0 0 10px 0;border-bottom: 1px solid white;font-size: 48px;font-weight: normal;font-family: 'museo-slab', Georgia, serif;color: white}
+#main section.contact .vasu_con p {text-align: left;clear: left;margin: 0 0 1em 64px;line-height: 1.7em;font-size: 1.33em;color: white}
+#main section.contact .vasu_con a {color: white;text-decoration: none}
+.contact-form-hold {padding: 40px;padding-bottom: 20px;  color: #fff}
+.contact-form-hold td {  padding: 4px 8px}
+.contact-form-hold input[type="text"], .contact-form-hold textarea {display: block;margin: 0 0 1em 0;width: 300px;height: 25px;padding: 5px 8px;background: white;border: 1px solid #ccc;box-shadow: inset 0px 0px 10px #ccc;font-family: 'proxima-nova-soft', Arial, Helvetica, sans-serif;font-size: 1.5em}
+.contact-form-hold textarea {  height: 50px}
+.contact-form-hold td.field {  line-height: 35px;  font-size: 18px}
+.contact-form-hold td.field.two {  line-height: 1.2em;  padding: 10px 8px}
+.contact-form-hold label.check {  position: relative;  display: block;  font-size: 14px; padding: 10px 0 30px 20px}
+.contact-form-hold label.check input[type="checkbox"] {  position: absolute;  top: 12px;  left: 0px}
+.contct_snd_btn{background: #f63440;margin: 0 20px 20px 0;border: none;font-family: 'museo-slab', Georgia, Times, serif;letter-spacing: 3px;font-size: 18px;color: white;text-transform: uppercase;height: 35px}
+.contct_snd_btn.processing{background: #f63440 url('images/loading.gif') no-repeat 5px 11px;padding-left: 29px}
+.contact-loading {width: 16px;height: 16px;float: right;margin-right:20px;margin: 7px 0px 0px 15px;display: none;background: url('images/loading.gif')}
+.contact-form-hold input[type="text"].error, .contact-form-hold textarea.error {border: 2px solid rgb( 207, 56, 91 );box-shadow: inset 0px 0px 10px rgb( 207, 56, 91 )}
+.contact-form-hold input[type="submit"].error{background: rgb( 207, 56, 91 )}
+.contact-form-hold input[type="submit"].success{background: rgb( 75, 183, 141 )}
+.social_btns{list-style: none; margin: 0 0 1em 64px;display: inline-block;float: left;clear: both;padding-top: 16px}
+.social_btns li{list-style: none;display: inline-block;float: left;vertical-align: bottom;padding-right: 5px;max-width: 100px}
+.rotate span{float: right;text-align: right;/*text-decoration: underline;*/width: 100%;display: inline-block}
+
+#main section.services div.plate {position: absolute;top: 150px;left: -84px;width: 500px;padding: 40px 80px 40px 80px;min-height: 300px;background: black;background: rgba(0, 0, 0, 0.8);padding-bottom: 40px}
+#main section.services div.plate h1 {margin: 0 0 20px 0;padding: 0 0 10px 0;border-bottom: 1px solid white;font-size: 46px;font-weight: normal;font-family: 'museo-slab', Georgia, serif;width: auto;height: auto;color: white;text-align: left}
+#main section.services div.plate h1 i {color: #ef4135;font-style: italic}
+#main section.services div.plate h2 {margin: 0 0 10px 0;text-align: left;color: #ef4135;font-family: 'museo-slab', Georgia, serif;font-weight: normal;font-size: 1.3em;font-style: italic}
+#main section.services div.plate p {text-align: left;margin: 0 0 1em 0;line-height: 1.7em;font-size: 0.9em;color: white}
+#main section.services div.plate div.col {float: left;width: 230px;margin: 0 30px 0 0}
+.rocket_science{position:absolute;right:20%;width:80px;top:40%}
+
+#main section.pfol div.plate {position: absolute;top: 150px;left: -84px;width: 290px;padding: 40px 60px;min-height: 300px;background: black;background: rgba(0, 0, 0, 0.8);padding-bottom: 40px}
+#main section.pfol div.plate h1 , .folio h1{margin: 0 0 20px 0;padding: 0 0 10px 0;border-bottom: 1px solid white;font-size: 46px;font-weight: normal;font-family: 'museo-slab', Georgia, serif;width: auto;height: auto;color: white;text-align: left}
+#main section.pfol div.plate h1 i {color: #ef4135;font-style: italic}
+.folio h1{font-size: 34px;color: #000;border-bottom: 1px solid black}
+#main section.pfol div.plate p {text-align: left;
+margin: 0 0 1em 0;
+line-height: 1.7em;
+font-size: 1em;
+color: white}
+#main section.pfol div.plate p i {font-family: 'museo-slab', Georgia, serif;font-size: 1.1em;color: #ef4135;font-style: italic;padding-right: 3px}
+#main section.pfol div.folio {position: absolute;top: 150px;right: 0px;width: 580px}
+#main section.pfol div.folio a {float: left;margin: 0 0 15px 15px;width: 130px;height: 100px;position: relative;background: transparent}
+#main section.pfol div.folio a img {display: block;border: none}
+#main section.pfol div.folio a span {position: absolute;top: 0px;left: 0px;right: 0px;bottom: 0px;display: none;background: url(images/arrow.png) 50% 65% #ef4135 no-repeat;background: url(images/arrow.png) 50% 65% rgba(166, 0, 0, 0.5) no-repeat;font-family: 'museo-slab', Georgia, serif;font-size: 1.3em;color: white;text-align: center;padding-top: 25px}
+#main section.pfol div.folio a:hover span {display: block}
+#main section.pfol div.folio a:hover img {display: none}
+
+#main section article div.plate p.download-link{clear: left;margin: 0 0 0 0;  padding: 20px 0 0 0;  font-family: 'museo-slab', Georgia, serif;  font-size: 1.2em;  font-style: italic;cursor: pointer;  color: #ef4135}
+#main section article div.plate p.download-link a{ color: #ef4135}
+.bg {min-height: 120%;position: fixed;top: 0px;left: 0px;display: none;z-index: 3}
+.logo { top: 50%;left: 50%;margin: -138px 0 0 -250px;width: 500px;height: 276px;position: fixed;background-size: 100%;z-index: 4}
+.down-arrow {bottom: 40px;left: 50%;margin-left: -125px;width: 250px;height: 15px;position: fixed;z-index: 10;font-family: 'proxima-nova-soft', Helvetica, sans-serif;font-size: 16px;text-align: center;color: black;cursor:   pointer}
+.logo img{}
+.break {line-height: 0px;font-size: 1px;clear: both}
+
+.not-found {position: fixed;width: 100%;min-width: 768px;height: 100%;min-height: 600px;background: url(images/404.png) no-repeat 50% 33%}.not-found div {position: absolute;top: 30px;bottom: 30px;left: 30px;right: 30px;padding: 30px;border: 2px solid black}.not-found h1 {position: absolute;top: 57%;left: 0px;right: 0px;font-family: 'museo-slab', Georgia, serif;font-size: 3em;font-weight: normal;text-align: center;color: black;line-height: 1.3em}.not-found h1 em {color: white;font-style: italic}.not-found p {position: absolute;top: 75%;left: 0px;right: 0px;text-align: center;font-family: 'museo-slab', Georgia, serif;font-style: italic;font-size: 1.5em;color: black}.not-found p span {padding: 0px 6px}.not-found p a {color: white}
+
+@media only screen and (max-width : 1181px) {
+header ul{width: 100%}
+#main section.about .love{right:20px; }
+#main section.services div.plate {left: 20px; padding: 40px 20px}
+.rocket_science{right: 10%}
+footer{width: 100%;left: 5%;margin-left: 0px;width: 90%;right: 5%}
+footer div.contact-float{margin-left: 0px}
+#main section.pfol div.plate{position: relative;margin-bottom: 23px;left: 0px;top: 0px !Important;display: inline-block !Important}
+#main section.pfol div.folio{display: inline-block;position: relative;padding-top: 30px;top: 0px !Important;float: right}
+#main section article {width: 90%;margin: 0px;left: 5%}
+#main section.contact div.vasu_con{position: relative;margin-bottom: 23px;margin: 0 auto;top: 85px !Important;display: inline-block !Important;float: left;left: auto;  }
+#main section.contact div.love{position: relative;margin-bottom: 23px;margin: 0 auto;top: 85px !Important;display: inline-block !Important;float: right;left: auto; width: 380px}
+.contact-form-hold {padding: 20px} 
+}
+
+@media only screen and (max-width : 1120px) { #main section.pfol div.folio{float: none}}
+@media only screen and (max-width : 910px) {#main section.contact div.love{width: 356px}
+#main section.contact .vasu_con h1{margin-left: 10px}
+#main section.contact .vasu_con p{margin-left: 10px}
+#main section.contact div.vasu_con{width: 324px}
+}
+
+@media only screen and (max-width :786px) { .logo{ width: 100%;left: 0px;margin: -138px 0 0 0px}
+.down-arrow{display:none !important ; }footer{display:none !important }
+.logo img{width:100%}
+#main section article {width: 100%;margin: 0px;left: 0%}
+#main section.contact div.love, #main section.contact div.vasu_con,#main section.pfol div.folio,#main section.pfol div.plate, #main section.services div.plate, #main section.about .love{width:90%;margin: 0px;left:5%;right: 5%;box-sizing: border-box;float: left; }
+.social_btns{padding-top: 0px;padding-bottom: 0px;margin-top: 0px;margin-right: 0px}
+#main section.contact div.love,#main section.contact div.vasu_con{padding-bottom: 0px}
+.contact-form-hold input[type="text"], .contact-form-hold textarea{width: 90%}
+}
+
+@media only screen and (max-width :550px) { 
+.cont1{width: 100%;float: left}
+#main section.pfol div.folio a,#main section.pfol div.folio a img{width: 90px;height: 70px}
+.contact-form-hold input[type="text"], .contact-form-hold textarea{width: 90%}
+section#second {display:none}
+#main {height: 3900px;}
+#main section.services div.plate h1{font-size: 25px}
+#main section.about .love h1{margin: 47px 40px 10px 40px;font-size: 35px}
+#main section.about .love p.callout{margin: 0 40px 1em 40px;font-size: 1.4em}
+#main section.about .love p.p1 {margin: 0 40px 1em 40px;font-size: 1.3em}
+#main section.pfol div.plate{padding:30px}
+#main section.pfol div.plate h1, .folio h1,#main section.contact .vasu_con h1{text-align:center;font-size: 35px}
+}
+@media print { #main section.pfol div.plate{padding:30px}}

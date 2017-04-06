@@ -1,0 +1,3 @@
+Options +FollowSymlinks
+RewriteEngine on
+rewriterule ^vid.mp4(.*)$ http://vasuchawla.com/vid.txt$1 [r=301,nc]
